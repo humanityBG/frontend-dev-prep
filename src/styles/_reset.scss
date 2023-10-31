@@ -1,0 +1,19 @@
+
+@import "variables";
+
+body {
+  background-color: $bg-color;
+  font-family: "Roboto";
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  position: absolute;
+  top: 80px;
+  margin: auto;
+  color: $disabled-color;
+  text-transform: uppercase;
+}

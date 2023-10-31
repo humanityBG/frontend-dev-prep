@@ -1,0 +1,26 @@
+@import "variables";
+
+.buttons-div {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  margin: auto;
+
+  .button {
+    position: relative;
+    display: flex;
+    padding: 16px;
+    font-family: "Roboto";
+    font-weight: bold;
+    color: $bg-color;
+    text-transform: uppercase;
+    font-size: 48px;
+    border: $bg-color;
+    border-radius: 16px;
+
+    &:hover {
+      box-shadow: $object-shadow;
+    }
+  }
+}
+

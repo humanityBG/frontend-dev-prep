@@ -1,0 +1,16 @@
+.checkboxes {
+  > .form-checkbox {
+    background: #dddddd;
+  }
+
+
+  &.alabala {
+    > .form-checkbox {
+      &:nth-child(3) {
+        background: red;
+      }
+    }
+  }
+
+
+}
