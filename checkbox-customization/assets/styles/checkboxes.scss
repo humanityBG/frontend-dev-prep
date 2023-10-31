@@ -1,0 +1,138 @@
+@use "../../../assets/styles/colors";
+@use "../../../assets/styles/variables";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:ital,wght@0,400;0,700;1,900&display=swap");
+
+.topnav {
+  background-color: colors.$div-bg;
+  overflow: hidden;
+  font-family: "Roboto";
+  font-weight: bold;
+
+  a {
+    float: left;
+    color: #b8b8b8;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+
+    &:hover {
+      background-color: #ddd;
+      color: black;
+    }
+  }
+
+  a.active {
+    background-color: colors.$primary-color;
+    color: white;
+  }
+}
+
+body {
+  background-color: colors.$bg-color;
+}
+
+.checkbox {
+  position: absolute;
+  opacity: 0;
+
+  & + label {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    line-height: variables.$checkbox-size;
+    padding-left: variables.$checkbox-size + 10;
+    font-size: variables.$checkbox-size - 2;
+    font-family: "Roboto";
+    color: colors.$font-color;
+
+    &:before {
+      position: absolute;
+      display: block;
+      left: 0;
+      top: 0;
+      content: "";
+      background: transparent;
+      width: variables.$checkbox-size;
+      height: variables.$checkbox-size;
+      box-shadow: inset 0 0 0 3px colors.$grey;
+      border-radius: 4px;
+      transition: 350ms ease-in all;
+    }
+
+    &:after {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      top: 5px;
+      left: 12px;
+      content: "";
+      width: 8px;
+      height: 16px;
+      border-right: 3px solid transparent;
+      border-bottom: 3px solid transparent;
+      transform: rotate(45deg);
+      transition: 350ms ease-out all;
+    }
+  }
+
+  & + label:hover {
+    color: #888888;
+  }
+
+  & + label:focus {
+    outline: none;
+  }
+
+  &:checked {
+    & + label {
+      &:before {
+        background: colors.$primary-color;
+        box-shadow: none;
+      }
+      &:after {
+        border-color: white;
+      }
+    }
+  }
+
+  &:disabled {
+    & + label {
+      &:before {
+        background: colors.$disabled-bg-color;
+        box-shadow: none;
+      }
+      &:after {
+        border-color: transparent;
+      }
+    }
+  }
+
+  &:checked:disabled {
+    & + label {
+      &:before {
+        background: colors.$disabled-bg-color;
+        box-shadow: none;
+      }
+      &:after {
+        border-color: colors.$disabled-color;
+      }
+    }
+  }
+}
+
+.form-checkbox {
+  position: relative;
+  display: block;
+  margin: 0 0 15px;
+}
+.checkboxes {
+  background-color: colors.$div-bg;
+  display: block;
+  width: 240px;
+  margin: 50px auto;
+  padding: 100px;
+  border: 3px solid colors.$grey;
+  border-radius: 10px;
+  box-shadow: variables.$object-shadow;
+}
