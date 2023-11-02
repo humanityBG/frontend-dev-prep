@@ -1,0 +1,28 @@
+@import "reset";
+@import 'variables';
+@import 'topnav';
+@import 'buttons';
+@import 'checkboxes';
+@import 'fonts';
+
+body {
+  background-color: $bg-color;
+  font-family: $font;
+  font-size: $fontsize-body;
+  display: block;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  color: $disabled-color;
+  text-transform: uppercase;
+}
+
+

@@ -1,0 +1,19 @@
+@import "variables";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:ital,wght@0,400;0,700;1,900&display=swap");
+
+body {
+  background-color: $bg-color;
+  font-family: "Roboto", serif;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  position: absolute;
+  top: 80px;
+  margin: auto;
+  color: $disabled-color;
+  text-transform: uppercase;
+}

@@ -1,0 +1,27 @@
+@import 'variables';
+
+.topnav {
+  background-color: $div-bg;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  font-weight: bold;
+
+  a {
+    float: left;
+    color: $text-color;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+
+    &:hover {
+      background-color: $primary-color;
+    }
+  }
+
+  a.active {
+    background-color: $primary-color;
+    color: white;
+  }
+}

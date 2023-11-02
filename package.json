@@ -1,0 +1,22 @@
+{
+  "name": "frontend-dev-prep",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/humanityBG/frontend-dev-prep.git",
+  "author": "humanityBG <desislav.lesov@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^8.0.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.1.0",
+    "prettier": "^2.5.1"
+  },
+  "scripts": {
+    "dev": "yarn run watch:scss",
+    "watch:scss": "node-sass src/styles/main.scss -o dist/css --watch",
+    "lint": "eslint \"**/*.js\"",
+    "lint:fix": "eslint --fix \"**/*.js\"",
+    "build:prod": "yarn run build:scss && yarn run lint",
+    "build:scss": "node-sass src/styles/main.scss -o dist/css"
+  }
+}
