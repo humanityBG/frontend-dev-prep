@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:ital,wght@0,400;0,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:ital,wght@0,400;0,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:ital,wght@0,400;0,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:ital,wght@0,400;0,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:ital,wght@0,400;0,700;1,900&display=swap");
+body {
+  background-color: #2e2e2e;
+  font-family: "Roboto", serif;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+h1 {
+  position: absolute;
+  top: 80px;
+  margin: auto;
+  color: #cecece;
+  text-transform: uppercase; }
+
+.topnav {
+  background-color: #5f5f5f;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  font-weight: bold; }
+  .topnav a {
+    float: left;
+    color: #ececec;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px; }
+    .topnav a:hover {
+      background-color: #00579e; }
+  .topnav a.active {
+    background-color: #00579e;
+    color: white; }
+
+body {
+  background-color: #2e2e2e;
+  font-family: "Roboto", serif;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+h1 {
+  position: absolute;
+  top: 80px;
+  margin: auto;
+  color: #cecece;
+  text-transform: uppercase; }
+
+.buttons-div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: row; }
+  .buttons-div .button {
+    position: relative;
+    display: flex;
+    padding: 16px;
+    font-family: "Roboto", serif;
+    font-weight: bold;
+    color: #ececec;
+    text-decoration: none;
+    background-color: #b8b8b8;
+    text-transform: uppercase;
+    font-size: 1em;
+    border: #2e2e2e;
+    border-radius: 16px;
+    transition: 200ms ease-in-out all; }
+    .buttons-div .button:hover {
+      font-size: 3em;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      background-color: #00579e;
+      transition: 200ms ease-in-out all; }
+
+.checkboxes {
+  background-color: #5f5f5f;
+  display: flex;
+  width: 240px;
+  margin: 50px auto;
+  padding: 100px;
+  border: 3px solid #b8b8b8;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; }
+  .checkboxes input[type=checkbox] {
+    display: none; }
+  .checkboxes label {
+    padding: 10px 10px 10px 50px;
+    display: block;
+    color: #ececec;
+    position: relative;
+    margin: 10px;
+    cursor: pointer; }
+    .checkboxes label::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 36px;
+      height: 36px;
+      background: url("https://i.imgur.com/Tgf0KBF.png") no-repeat;
+      filter: brightness(0.9) invert(0.7) sepia(0.5) hue-rotate(100deg) saturate(200%);
+      background-size: contain;
+      display: block;
+      transition: 200ms ease-out all; }
+  .checkboxes input[type="checkbox"]:checked + label::before {
+    background: url("https://i.imgur.com/rGFeQtq.png") no-repeat;
+    filter: brightness(0.9) invert(0.7) sepia(0.5) hue-rotate(100deg) saturate(200%);
+    background-size: contain;
+    display: block;
+    transition: 200ms ease-in all; }
+
+body {
+  background-color: #2e2e2e;
+  font-family: "Roboto", serif;
+  font-size: 1rem;
+  display: block;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center; }
+
+h1 {
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  color: #cecece;
+  text-transform: uppercase; }
