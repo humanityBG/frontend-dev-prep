@@ -18,5 +18,8 @@
     "lint:fix": "eslint --fix \"**/*.js\"",
     "build:prod": "yarn run build:scss && yarn run lint",
     "build:scss": "node-sass src/styles/main.scss -o dist/css"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.4.2"
   }
 }
