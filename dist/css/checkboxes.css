@@ -6223,7 +6223,7 @@ readers do not read off random characters that represent icons */
   font-weight: 400; }
 
 .checkboxes {
-  background-color: #5f5f5f;
+  background-image: linear-gradient(180deg, #2e2e2e, rgba(131, 131, 131, 0.3));
   display: block;
   width: 240px;
   margin: 50px auto;
@@ -6236,7 +6236,7 @@ readers do not read off random characters that represent icons */
   .checkboxes label {
     padding: 10px 10px 10px 50px;
     display: block;
-    color: #ececec;
+    color: rgba(236, 236, 236, 0.18);
     position: relative;
     margin: 10px;
     cursor: pointer; }

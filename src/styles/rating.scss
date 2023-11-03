@@ -1,0 +1,76 @@
+@import 'variables';
+
+.rating-div {
+  background-image: $bg-gradient;
+  color: $text-color;
+  display: block;
+  width: 240px;
+  margin: 50px auto;
+  padding: 100px;
+  border: 3px solid $grey;
+  border-radius: 10px;
+  box-shadow: $object-shadow;
+}
+
+.star-rating {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+
+.radio-input {
+  position: fixed;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.radio-label {
+  cursor: pointer;
+  font-size: 0;
+  color: rgba(236, 236, 236, 0.37);
+  transition: color 200ms ease-in-out;
+
+  &:before {
+    display: inline-block;
+    font-size: 32px;
+    content: '☆';
+    text-align: center;
+  }
+
+  &:hover {
+    color: $secondary-color;
+    transform: rotate(360deg);
+    transition: 300ms ease-in-out;
+  }
+
+  .radio-input:checked + &,
+  .radio-label:hover + &,
+  .radio-input:checked ~ &,
+  .radio-label:hover ~ &,
+  & + .radio-input:checked,
+  & + .radio-label:hover {
+    color: $tertiary-color;
+  }
+}
+
+.rating {
+  position: relative;
+  appearance: none;
+  color: transparent;
+  width: auto;
+  display: inline-block;
+  vertical-align: baseline;
+  font-size: 32px;
+
+  &::before {
+    --percentage: calc(3.5 / 5 * 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '☆☆☆☆☆';
+    color: rgba(236, 236, 236, 0.37);
+    background: linear-gradient(90deg, $primary-color var(--percentage), rgba(236, 236, 236, 0.37) var(--percentage));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
